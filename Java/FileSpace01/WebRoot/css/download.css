@@ -1,0 +1,19 @@
+@import url(base.css);
+@import url(header.css);
+@import url(page.css);
+@import url(pop_up.css);
+@import url(dropdown.css);
+
+#container{
+	background: url(../img/index/bg.png) right bottom no-repeat;
+	overflow: hidden;
+}
+
+#content{
+	width: 1024px;
+	height: 800px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	overflow: hidden;
+	background: url(../img/index/out.png);
+}

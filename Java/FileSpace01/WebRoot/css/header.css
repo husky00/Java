@@ -1,0 +1,38 @@
+#header{
+	width: 100%;
+	height: 80px;
+	background-color: #000;
+	margin-bottom: 50px;
+}
+
+#header .header_detail{
+	width: 1240px;
+	height: 80px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #000 url(../img/header/headerbg.png) no-repeat;
+}
+
+.searchform{
+	float: left;
+	width: 300px;
+	line-height: 80px;
+	margin-left: 550px;
+}
+
+#search{
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+
+#header #submit{
+	border-radius: 5px;
+	width: 80px;
+	height: 30px;
+	font-size: 15px;
+	letter-spacing: 5px;
+	font-weight: bold;
+}
+

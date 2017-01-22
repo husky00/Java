@@ -1,0 +1,175 @@
+@import url(base.css);
+@import url(header.css);
+
+#container{
+	background: url(../img/index/bg.png) right bottom no-repeat;
+	overflow: hidden;
+}
+
+#content{
+	width: 1024px;
+	height: 800px;
+	margin: 0 auto;
+	margin-bottom: 150px;
+	overflow: hidden;
+	background: url(../img/index/out.png);
+}
+
+.contentform{
+	width: 700px;
+	margin: 50px auto;
+	background: url(../img/login/bg.png);
+	box-shadow: 0px 0px 10px #d19394;
+	overflow: hidden;
+}
+
+.userimage img{
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 20px 40px 20px 300px;
+	border-radius: 50%;
+	border: 1px solid #000;
+}
+
+.user{
+	width: 700px;
+	line-height: 60px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contentform input{
+	width: 250px;
+	height: 40px;
+	border: 1px solid #999a97;
+	background-color: rgba(153,154,151,0.5);
+	box-shadow: 0 0 2px #999a97 inset;
+	padding-left: 35px;
+	border-radius: 4px;
+}
+
+.contentform input[placeholder]{ color: #000; }
+
+
+#username{ 
+	background-image: url(../img/login/smallimage.png); 
+	background-position: 0 7px;
+	background-repeat: no-repeat;
+}
+
+#password,#againpassword,#newpassword{
+	background-image: url(../img/login/smallimage.png); 
+	background-position: 0 -48px;
+	background-repeat: no-repeat;
+}
+
+#myemail{
+	background-image: url(../img/login/smallimage.png); 
+	background-position: 0 -22px;
+	background-repeat: no-repeat;
+} 
+
+#verification{
+	background-image: url(../img/login/number.png); 
+	background-position: 12px 15px;
+	background-repeat: no-repeat;
+} 
+
+.contentform label{
+	display: inline-block;
+	font-family: "微软雅黑";
+	width: 90px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: right;
+}
+
+.contentform label[for="remember"]{
+	font-size: 14px;
+	width: 500px;
+	line-height: 30px;
+	text-align: left;
+	margin-left: 100px;
+}
+
+.contentform input[type="checkbox"]{
+	width: 10px;
+	height: 10px;
+	margin: 0 10px 0 40px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+#user_sex{
+	width: 497px;
+	text-align: left;
+	padding-left: 103px;
+}
+
+.contentform input[type="radio"]{
+	width: 10px;
+	height: 10px;
+	line-height: 30px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.contentform input[type="submit"],#back{
+	width: 300px;
+	height: 40px;
+	background: rgba(250,213,202,0.8) url(../img/login/number.jpg);
+	margin: 20px 0 10px 220px;
+	border: none;
+	font-size: 18px;
+	color: #000;
+	font-family: "黑体";
+	text-align: left;
+	padding-left: 100px;
+	letter-spacing: 40px;
+	cursor: pointer;
+}
+
+
+.contentform input[type="button"]{
+	width: 140px;
+	height: 40px;
+	text-align: center;
+	padding-left: 0px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: url(../img/login/number.jpg);
+	cursor: pointer;
+}
+
+.question{
+	clear: both;
+	width: 300px;
+	line-height: 40px;
+	font-size: 14px;
+	margin: 20px 0 30px 220px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	text-align: center;
+	background: url(../img/login/enter.png) 220px -3px no-repeat;
+}
+
+.question a{
+	display:block;
+	width: 300px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #000000;
+	transition: all 1.5s ease;
+}
+
+.question a:hover{
+	background: #000000 url(../img/login/enter.png) 240px top no-repeat;
+	color: #ffffff;
+}
+
+
+
+
+
+

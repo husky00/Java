@@ -1,0 +1,220 @@
+.login{
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	top: 0px;
+	right: 10%;
+	line-height: 40px;
+	background: #000;
+	z-index: 998;
+}
+
+.login a{
+	text-decoration: none;
+	height: 80px;
+	line-height: 80px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+}
+
+.fullbg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter:alpha(opacity=50); 
+	opacity:0.5;
+	-moz-opacity:0.5; 
+	-khtml-opacity:0.5; 
+	background-color: #ccc;
+	z-index: 999
+}
+
+.pop_up{
+	background-color:#fff; 
+	border:5px solid rgba(0,0,0, 0.4); 
+	width:425px;
+	height:250px; 
+	left:37%; 
+	/*margin:-200px 0 0 -200px; */
+	padding:1px; 
+    position:fixed !important; /* 浮动对话框 */ 
+	top:80px;  
+	z-index:999; 
+	border-radius:5px; 
+	display:none; 
+}
+
+.collect_fullbg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter:alpha(opacity=50); 
+	opacity:0.5;
+	-moz-opacity:0.5; 
+	-khtml-opacity:0.5; 
+	background-color: #ccc;
+	z-index: 999
+}
+
+.collect_pop_up{
+	background-color:#fff; 
+	border:5px solid rgba(0,0,0, 0.4); 
+	width:425px;
+	height:250px; 
+	left:37%; 
+	/*margin:-200px 0 0 -200px; */
+	padding:1px; 
+    position:fixed !important; /* 浮动对话框 */ 
+	top:80px;  
+	z-index:999; 
+	border-radius:5px; 
+	display:none; 
+}
+
+.close{
+	font-size: 13px;
+	text-align: right;
+	background: #ccc;
+	height: 30px;
+	line-height: 30px;
+}
+
+.close a{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.close a:hover{
+	cursor:pointer;
+}
+
+.user{
+	height: 50px;
+}
+
+.user label{
+	width: 80px;
+	display: inline-block;
+	font-family: "微软雅黑";
+	text-align: right;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.user input{
+	margin-left: 10px;
+	padding-left: 40px;
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #000;
+	/*background-color: rgba(153,154,151,0.5);*/
+}
+
+#username{
+	background: url(../img/login/smallimage.png);
+	background-position: 0 0px;
+	background-repeat: no-repeat;
+}
+
+#password{
+	background: url(../img/login/smallimage.png);
+	background-position: 0 -55px;
+	background-repeat: no-repeat;
+}
+
+#code{
+	width: 100px;
+	padding-left: 0px;
+}
+
+#code_text{
+	width: 60px;
+	height: 30px;
+	margin-left: 10px;
+	margin-top: 10px;
+	padding-left: 0px;
+	font-family:Arial;  
+    font-style:italic;  
+    font-weight:bold;
+    color: blue;
+}
+
+.prompt{
+	margin-left: 10px;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.user input[placeholder]{
+	color: #000;
+	font-size: 13px;
+}
+
+ .pop_up_submit{
+	width: 140px;
+	height: 30px;
+	background: rgba(250,213,202,0.8) url(../img/login/login.jpg);
+	margin-left:50px;
+	border: none;
+	font-size: 18px;
+	color: #ffffff;
+	font-family: "黑体";
+	text-align: left;
+	padding-left: 50px;
+	letter-spacing: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.style{
+	width:250px;
+	margin: 0 auto;
+}
+
+.style label{
+	width: 80px;
+	display: inline-block;
+	font-family: "微软雅黑";
+	text-align: right;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+}
+
+#collect_submit{
+	display: block;
+	width:250px;
+	height:30px;
+	border:none;
+	border-radius:5px;
+	margin-top: 20px;
+	font-family: "黑体";
+	text-align: center;
+	letter-spacing: 10px;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+.forget{
+	display: block;
+	width: 200px;
+	margin: 10px auto;
+	height: 30px;
+	line-height: 30px;
+}
+
+.forget a{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: blue;
+	margin: 0 auto;
+}

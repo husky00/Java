@@ -1,0 +1,91 @@
+@import url(base.css);
+@import url(header.css);
+@import url(page.css);
+@import url(pop_up.css);
+@import url(dropdown.css);
+@import url(backToTop.css);
+
+#container{
+	background: url(../img/filedetail/containerimg.png) right bottom no-repeat;
+	overflow: hidden;
+}
+
+#content{
+	position: relative;
+	width: 1024px;
+	padding-bottom: 250px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	overflow: hidden;
+	background: url(../img/filedetail/containerbg.png);
+}
+
+#content::after{
+	position: absolute;
+	content: "";
+	width: 1024px;
+	height: 200px;
+	bottom: 0;
+	left: 0;
+	background: url(../img/base/logo.png);
+}
+
+#content ol{
+	width: 800px;
+	margin: 80px auto 0px;
+	overflow: hidden;
+}
+
+#content ol > li{
+	width: 100%;
+	margin: 20px 0 20px 0;
+	background: url(../img/index/everydocuments.jpg) no-repeat;
+	overflow: hidden;
+}
+
+.num{
+	float: left;
+	width: 100px;
+	height: 100px;
+	background: url(../img/index/document.png) center no-repeat; 
+}
+
+.detail{
+	margin-top: 20px;
+}
+
+.detail p{
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.detail p.document_name{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.choice{
+	margin-top: 20px;
+	margin-left: 300px;
+}
+
+.choice ul{
+	width: 100%;
+	line-height: 30px;
+}
+
+.choice ul li{
+	display: inline-block;
+	width: 50px;
+	line-height: 30px;
+	padding-left: 50px;
+	cursor: pointer;
+}
+
+.choice ul li:first-child { background: url(../img/index/icons.png) 15px 0px no-repeat; }
+.choice ul li:nth-child(2) { background: url(../img/index/icons.png) 15px -25px no-repeat; }
+.choice ul li:nth-child(3) { background: url(../img/index/icons.png) 15px -50px no-repeat; }
+.choice ul li:nth-child(4) { background: url(../img/index/icons.png) 15px -75px no-repeat; }
+
+
+

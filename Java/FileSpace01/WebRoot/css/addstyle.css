@@ -1,0 +1,103 @@
+.fullbg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter:alpha(opacity=50); 
+	opacity:0.5;
+	-moz-opacity:0.5; 
+	-khtml-opacity:0.5; 
+	background-color: #ccc;
+	z-index: 999;
+}
+
+.pop_up{
+	background-color:#fff; 
+	border:5px solid rgba(0,0,0, 0.4); 
+	width:425px;
+	height:200px; 
+	left:37%; 
+	/*margin:-200px 0 0 -200px; */
+	padding:1px; 
+    position:fixed !important; /* 浮动对话框 */ 
+	top:150px;  
+	z-index:999; 
+	border-radius:5px; 
+	display:none                                                     ; 
+}
+
+.close{
+	display: block;
+	font-size: 13px;
+	text-align: right;
+	background: #333;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 0;
+}
+
+.close a{
+	text-decoration: none;
+	color: #fff;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.style label{
+	width: 80px;
+	display: inline-block;
+	font-family: "微软雅黑";
+	text-align: right;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+}
+
+.father{
+	width: 425px;	
+}
+
+.style input{
+	margin-left: 10px;
+	padding-left: 40px;
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	color: #000;
+	/*background-color: rgba(153,154,151,0.5);*/
+}
+
+#submit{
+	width: 250px;
+	margin: 20px 0 0 82px;
+	background: rgba(250,213,202,0.8) url(../img/login/login.jpg);
+	border: none;
+	font-size: 18px;
+	color: #000;
+	font-family: "黑体";
+	text-align: center;
+	letter-spacing: 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#addInfo{
+	width: 150px;
+	line-height: 30px;
+	padding: 10px auto;
+	float: right;
+	background: url(../img/userManage/tableth.jpg);
+	border: none;
+	font-size: 18px;
+	color: #000;
+	font-family: "黑体";
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.cls_inp{
+	width: 425px;
+}
+

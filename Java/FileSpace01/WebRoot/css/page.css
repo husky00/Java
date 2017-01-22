@@ -1,0 +1,24 @@
+/*分页*/
+.page{
+	width: 400px;
+	height: 50px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+.page ul li{
+	width: 80px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: center;
+	background-color: #222;
+	border-radius: 5px;
+}
+
+.page ul li a{
+	display: inline-block;
+	width: 80px;
+	line-height: 30px;
+	color: #fff;
+}

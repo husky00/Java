@@ -1,0 +1,40 @@
+.dropdown{
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	top: 20px;
+	right: 10%;
+	line-height: 40px;
+	background: #000;
+	z-index: 999;
+}
+
+.dropdown a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+}
+
+#drop{
+	display: none;
+	list-style: none;
+	z-index: 999;
+	background: #fff;
+	margin-top: -10px;
+}
+
+#drop li{
+	width: 100px;
+	height: 30px;
+	background: #ccc;
+}
+
+#drop li a{
+	width: 100px;
+	line-height: 30px;
+	height: 30px;
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC  "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+		<constant name="struts.i18n.encoding" value="UTF-8" />
+		
+		
+	<package name="default" namespace="/" extends="struts-default,json-default">
+	
+		<!-- 拦截器部分 -->
+		<interceptors>
+			<interceptor name="loginInterceptor" class="cn.chenxhusky.FileSpace.util.LoginInterceptor"></interceptor>
+			<interceptor-stack name="loginStack">
+				<interceptor-ref name="loginInterceptor">
+					<param name="excludeMethods">login,logout,lists,index,delete,praise,bad,collectionadd</param>
+				</interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		
+		
+		<default-interceptor-ref name="loginStack"></default-interceptor-ref>
+		
+	
+		<!-- Action部分 -->
+		<!-- 与User相关的操作 -->
+		<action name="user*" class="cn.chenxhusky.FileSpace.action.UserAction" method="{1}">
+			<result name="re">/html/login.jsp</result>
+			<result name="index" type="chain">
+				<param name="namespace">/</param>  
+        		<param name="actionName">filelists</param>
+			</result>						<!-- 返回首页结果 -->
+			<result name="list">/html/userManage.jsp</result>
+			<result name="error">/WEB-INF/error.jsp</result>				<!-- 出错页面——404 -->
+			<result name="delete" type="chain">								<!-- 删除用户 ,改用JSON-->
+				<param name="namespace">/</param>  
+        		<param name="actionName">userlists</param>
+			</result>
+			<result name="modifyPassword">/html/personInfo.jsp</result>		<!-- 用户修改密码 -->
+			<result name="add" type="chain">								<!-- 添加用户 -->
+				<param name="namespace">/</param>  
+        		<param name="actionName">userlists</param>
+			</result>
+			<result name="adderror">/html/addUser.jsp</result>				<!-- 添加用户出错，重新添加 -->
+			<result name="modifyInfo">/html/personInfo.jsp</result>			<!-- 修改个人信息 -->
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+			<interceptor-ref name="loginStack"></interceptor-ref>	<!-- login拦截 -->
+		</action>
+		
+		<!-- 与文件相关 -->
+		<action name="file*" class="cn.chenxhusky.FileSpace.action.FileAction" method="{1}">
+			<result name="re">/html/login.jsp</result>
+			<result name="error">/WEB-INF/error.jsp</result>				<!-- 出错页面——404 -->
+			<result name="mylists">/html/folderfile.jsp</result>			<!-- 个人文件中心 -->
+			<result name="upload" type="chain">
+				<param name="namespace">/</param>  
+        		<param name="actionName">typelists</param>					<!-- 上传文件ok -->
+			</result>
+			<result name="lists">/index.jsp</result>
+			<result name="download" type="stream">
+				<param name="inputName">fileDown</param>
+				<param name="contentDisposition">attachment;filename="${fileFileName}"</param>
+				<param name="contentType">fileContentType;charset=utf-8</param>
+			</result>
+			<result name="open" type="stream">
+				<param name="inputName">fileDown</param>
+				<param name="contentDisposition">inline;filename="${fileFileName}"</param>
+				<param name="contentType">fileContentType;charset=utf-8</param>
+			</result>
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+			<interceptor-ref name="loginStack"></interceptor-ref>	<!-- login拦截 -->														
+		</action>
+		
+		<!-- 与类别相关 -->
+		<action name="type*" class="cn.chenxhusky.FileSpace.action.TypeAction" method="{1}">
+			<result name="error">/WEB-INF/error.jsp</result>				<!-- 出错页面——404 -->
+			<result name="re">/html/login.jsp</result>
+			<result name="lists">/html/uploadFile.jsp</result>
+			<result name="managelists">/html/typemanager.jsp</result>
+			<result name="delete" type="chain">
+				<param name="namespace">/</param>  
+        		<param name="actionName">typemanagelists</param>
+			</result>
+			<result name="add" type="chain">
+				<param name="namespace">/</param>  
+        		<param name="actionName">typemanagelists</param>
+			</result>
+			<interceptor-ref name="loginStack"></interceptor-ref>	<!-- login拦截 -->
+		</action>
+		
+		<action name="collection*" class="cn.chenxhusky.FileSpace.action.CollectionAction" method="{1}">
+			<result name="error">/WEB-INF/error.jsp</result>				<!-- 出错页面——404 -->
+			<result name="re">/html/login.jsp</result>
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+			<result name="list">/html/collection.jsp</result>
+			<interceptor-ref name="loginStack"></interceptor-ref>	<!-- login拦截 -->
+		</action>
+		
+	</package>
+	
+</struts>     

@@ -1,0 +1,93 @@
+@import url(base.css);
+@import url(header.css);
+
+#container{
+	background: url(../img/filedetail/containerimg.png) right bottom no-repeat;
+	overflow: hidden;
+}
+
+#content{
+	position: relative;
+	width: 1024px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+	overflow: hidden;
+	background: url(../img/filedetail/containerbg.png);
+}
+
+#content::after{
+	position: absolute;
+	content: "";
+	width: 1024px;
+	height: 200px;
+	bottom: 0;
+	left: 0;
+	background: url(../img/base/logo.png);
+}
+
+#content .filedetail{
+	width: 980px;
+	max-height: 1700px;
+	margin: 50px 0 300px 0;
+	text-align: center;
+	background: url(../img/filedetail/contentbg.png) no-repeat;
+	overflow: hidden;
+}
+
+.filedetail h2{
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 60px;
+	letter-spacing: 12px;
+}
+
+.filedetail p.author{
+	line-height: 25px;
+}
+
+.filedetail p.time{
+	text-align: right;
+	margin-right: 100px;
+}
+
+p.filedetail_content{
+	clear: both;
+	width: 600px;
+	margin: 50px auto;
+	text-indent: 2em;
+	word-wrap: break-word;
+}
+
+.choice{
+	float: right;
+	margin: 20px 100px 50px auto;
+}
+
+.choice ul{
+	width: 100%;
+	line-height: 30px;
+}
+
+.choice ul li{
+	display: inline-block;
+	width: 70px;
+	line-height: 30px;
+	text-align: right;
+}
+
+.choice ul li a{
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+}
+
+.choice ul li:first-child { background: url(../img/index/icons.png) 15px 0px no-repeat; }
+.choice ul li:nth-child(2) { background: url(../img/index/icons.png) 15px -25px no-repeat; }
+.choice ul li:nth-child(3) { background: url(../img/index/icons.png) 15px -50px no-repeat; }
+.choice ul li:nth-child(4) { background: url(../img/index/icons.png) 15px -75px no-repeat; }
+
+p.backindex{
+	clear: both;
+	margin: 60px 0 40px;
+}
+
